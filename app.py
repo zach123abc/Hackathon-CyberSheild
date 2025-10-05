@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect, url_for, session
 import random, string
 
@@ -34,6 +33,18 @@ def generate():
         return render_template("generate.html", password=password)
 
     return render_template("generate.html", password=None)
+
+
+# ✅ New Route: Password Safety Page
+@app.route("/password-safety")
+def password_safety():
+    return render_template("password_safety.html")
+
+
+# ✅ New Route: Scam Awareness Page
+@app.route("/scam-awareness")
+def scam_awareness():
+    return render_template("scam_awareness.html")
 
 
 if __name__ == "__main__":
