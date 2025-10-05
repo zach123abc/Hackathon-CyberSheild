@@ -198,3 +198,42 @@ body{
   .feature-cards .card, .service-cards .card{width:100%}
   .header-nav{display:none}
 }
+
+.generator-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.generator-container {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.generator-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.generator-container p {
+  margin-bottom: 1.5rem;
+  color: #aaa;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
