@@ -4,9 +4,34 @@
 
 {% block content %}
 <h1>Main Menu</h1>
-<ul>
-  <li><a class="btn" href="{{ url_for('generate') }}">Generate Password</a></li>
-  <li><a class="btn" href="{{ url_for('password_safety') }}">Password Safety</a></li>
-  <li><a class="btn" href="{{ url_for('scam_awareness') }}">Scam Awareness</a></li>
-</ul>
+<p>Welcome to CyberShield! Protect your accounts with our tools and tips below:</p>
+
+<div class="card-container">
+  <div class="card">
+    <h2>Password Generator</h2>
+    <p>Instantly generate strong, random passwords. Customize character types for maximum security.</p>
+    <a class="btn" href="{{ url_for('generate') }}">Use Generator</a>
+  </div>
+
+  <div class="card">
+    <h2>Password Safety</h2>
+    <p>Learn the rules for creating unguessable passwords and avoiding common mistakes.</p>
+    <a class="btn" href="{{ url_for('password_safety') }}">Learn</a>
+  </div>
+
+  <div class="card">
+    <h2>Scam Awareness</h2>
+    <p>Identify phishing attempts and scams before they target you. Real-world examples included.</p>
+    <a class="btn" href="{{ url_for('scam_awareness') }}">Explore</a>
+  </div>
+</div>
+
+<section class="tips">
+  <h2>Quick Tips</h2>
+  <ul>
+    <li>Use unique passwords for each account.</li>
+    <li>Enable two-factor authentication wherever possible.</li>
+    <li>Stay alert for suspicious emails and messages.</li>
+  </ul>
+</section>
 {% endblock %}
