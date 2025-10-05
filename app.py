@@ -17,10 +17,24 @@ def menu():
 def generate():
     if request.method == "POST":
         length = int(request.form["length"])
-        characters = string.ascii_letters + string.digits + string.punctuation
-        password = "".join(random.choice(characters) for _ in range(length))
+        characters = ""
+
+        if "letters" in request.form:
+            characters += string.ascii_letters
+        if "numbers" in request.form:
+            characters += string.digits
+        if "symbols" in request.form:
+            characters += string.punctuation
+
+        if not characters:
+            password = "Please select at least one character type."
+        else:
+            password = "".join(random.choice(characters) for _ in range(length))
+
         return render_template("generate.html", password=password)
+
     return render_template("generate.html", password=None)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
