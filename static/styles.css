@@ -1,15 +1,14 @@
 /* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f4f7fc; /* soft light background */
-    color: #333;
+    background: #f4f7fc; 
     margin: 0;
     padding: 0;
 }
 
 /* Navigation */
 nav {
-    background: #0d6efd; /* blue navbar */
+    background: #0d6efd; 
     color: white;
     padding: 15px 30px;
     display: flex;
@@ -30,7 +29,7 @@ nav a:hover {
     color: #ffdd57; /* yellow hover */
 }
 
-/* Container */
+
 .container {
     max-width: 900px;
     margin: 30px auto;
@@ -40,14 +39,14 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Headings */
+
 h1, h2, h3 {
     color: #0d6efd;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Forms */
+
 form {
     display: flex;
     flex-direction: column;
@@ -73,7 +72,7 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(13,110,253,0.3);
 }
 
-/* Buttons */
+
 button {
     background-color: #0d6efd;
     color: white;
@@ -89,7 +88,7 @@ button:hover {
     background-color: #0b5ed7;
 }
 
-/* Links */
+
 a {
     color: #0d6efd;
     text-decoration: none;
@@ -109,7 +108,7 @@ a:hover {
     word-break: break-all;
 }
 
-/* Menu List */
+
 ul.menu-list {
     list-style: none;
     padding: 0;
@@ -131,7 +130,6 @@ ul.menu-list li a:hover {
     background: #0b5ed7;
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
