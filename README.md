@@ -19,12 +19,9 @@ It combines simple interactive tools with practical security tips to help people
 
 ##  Installation & Running Locally
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
 
-To run CyberShield locally, first clone the repository on your command promtusing:
+
+To run CyberShield locally, first clone the repository on your command prompt using:
 
 git clone https://github.com/zach123abc/Hackathon-CyberSheild
 
@@ -37,11 +34,6 @@ cd Hackathon-CyberSheild
 Make sure you have Python 3.8+ installed. Next, install the required dependencies:
 
 pip install flask
-
-
-Once everything is set up, start the Flask app with:
-
-python app.py
 
 
 Then create a Virtual Environment (Optional but Recommended)
@@ -65,11 +57,7 @@ macOS / Linux:
 
 source venv/bin/activate
 
-Install Flask using pip:
 
-
-
-pip install flask
 
 Run the Application
 Start the Flask development server:
