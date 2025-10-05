@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberShield - Protect Your Digital World</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>{% block title %}CyberShield - Protect Your Digital World{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">CyberShield</div>
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ url_for('menu') }}">Menu</a></li>
+        <li><a href="{{ url_for('generate') }}">Generate Password</a></li>
+        <li><a href="{{ url_for('password_safety') }}">Password Safety</a></li>
+        <li><a href="{{ url_for('scam_awareness') }}">Scam Awareness</a></li>
       </ul>
     </nav>
   </header>
 
+  {% block content %}
+  <!-- Default content: Hero + Features + Services -->
   <section id="hero">
     <h1>Secure Your Digital Life with CyberShield</h1>
     <p>Advanced tools to protect your accounts and data.</p>
@@ -59,6 +62,7 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
   <footer>
     <p>&copy; 2025 CyberShield. All rights reserved.</p>
