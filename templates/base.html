@@ -12,12 +12,13 @@
       <div class="logo">CyberShield</div>
       <ul>
         <li><a href="{{ url_for('menu') }}">Menu</a></li>
-        <li><a href="{{ url_for('generate') }}">Generate Password</a></li>
+        <li><a href="{{ url_for('generate') }}">Password Generator</a></li>
         <li><a href="{{ url_for('password_safety') }}">Password Safety</a></li>
         <li><a href="{{ url_for('scam_awareness') }}">Scam Awareness</a></li>
       </ul>
     </nav>
   </header>
+
 
   <main>
     {% block content %}{% endblock %}
