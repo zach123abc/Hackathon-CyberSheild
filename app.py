@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+import os
 import random, string
 
 app = Flask(__name__)
-app.secret_key = "why_u_looking_at_secerts" 
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", "default_dev_key")
 
 @app.route("/")
 def home():
