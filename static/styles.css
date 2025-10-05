@@ -164,3 +164,19 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #61dafb;
+  color: #121212;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4fa3d1;
+}
+
