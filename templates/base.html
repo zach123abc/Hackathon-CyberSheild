@@ -1,29 +1,67 @@
 <!DOCTYPE html>
-{% extends "base.html" %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShield - Protect Your Digital World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CyberShield</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-{% block title %}Main Menu{% endblock %}
+  <section id="hero">
+    <h1>Secure Your Digital Life with CyberShield</h1>
+    <p>Advanced tools to protect your accounts and data.</p>
+    <a href="#services" class="cta-btn">Get Started</a>
+  </section>
 
-{% block content %}
-<h1>Main Menu</h1>
-<p>Welcome to CyberShield! Protect your accounts and stay safe online by exploring the tools below.</p>
+  <section id="features">
+    <h2>Our Core Features</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Password Generator</h3>
+        <p>Create strong, unique passwords effortlessly.</p>
+      </div>
+      <div class="card">
+        <h3>Scam Awareness</h3>
+        <p>Learn to identify and avoid online scams.</p>
+      </div>
+      <div class="card">
+        <h3>Security Tips</h3>
+        <p>Stay informed with the latest security practices.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="card-container">
-  <div class="card">
-    <h2>Password Generator</h2>
-    <p>Instantly generate strong, random passwords. Customize character types for maximum security.</p>
-    <a class="btn" href="{{ url_for('generate') }}">Go</a>
-  </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Account Protection</h3>
+        <p>Comprehensive tools to safeguard your accounts.</p>
+      </div>
+      <div class="card">
+        <h3>Data Encryption</h3>
+        <p>Ensure your data is encrypted and secure.</p>
+      </div>
+      <div class="card">
+        <h3>Privacy Monitoring</h3>
+        <p>Stay updated on potential privacy threats.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h2>Password Safety</h2>
-    <p>Learn the rules for creating unguessable passwords and avoiding common mistakes.</p>
-    <a class="btn" href="{{ url_for('password_safety') }}">Learn</a>
-  </div>
-
-  <div class="card">
-    <h2>Scam Awareness</h2>
-    <p>Identify phishing attempts and scams before they target you. Real-world examples included.</p>
-    <a class="btn" href="{{ url_for('scam_awareness') }}">Explore</a>
-  </div>
-</div>
-{% endblock %}
+  <footer>
+    <p>&copy; 2025 CyberShield. All rights reserved.</p>
+  </footer>
+</body>
+</html>
