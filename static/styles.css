@@ -1,0 +1,143 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7fc; /* soft light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background: #0d6efd; /* blue navbar */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57; /* yellow hover */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #0d6efd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13,110,253,0.3);
+}
+
+/* Buttons */
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Links */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Password Display */
+#password {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+/* Menu List */
+ul.menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+ul.menu-list li a {
+    background: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+ul.menu-list li a:hover {
+    background: #0b5ed7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #0d6efd;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
