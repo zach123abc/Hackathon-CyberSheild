@@ -9,6 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
     }
     nav {
       background: #222;
@@ -17,6 +18,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    nav .logo a {
+      font-size: 20px;
+      font-weight: bold;
     }
     nav a {
       color: white;
@@ -28,6 +33,12 @@
     }
     .container {
       padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -38,6 +49,8 @@
     </div>
     <div class="menu">
       <a href="{{ url_for('generate') }}">Generate Password</a>
+      <a href="{{ url_for('password_safety') }}">Password Safety</a>
+      <a href="{{ url_for('scam_awareness') }}">Scam Awareness</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
@@ -48,4 +61,3 @@
   </div>
 </body>
 </html>
-
