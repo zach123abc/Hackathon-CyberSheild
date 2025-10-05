@@ -1,2 +1,66 @@
-# Hackathon-CyberSheild
-CyberShield is a simple website that helps users create strong passwords and spot online scams. It features a password safety guide, a secure password generator, and a scam awareness section with real examples and tips, making digital security easy to understand and apply.
+#  CyberShield
+
+CyberShield is a beginner-friendly Flask web app that teaches users how to create strong passwords and avoid common online scams.  
+It combines simple interactive tools with practical security tips to help people build better digital habits.
+
+##  Features
+- **Password Generator** – Create secure, random passwords instantly, with options for letters, numbers, and symbols.  
+- **Password Safety** – Learn how to build strong, unguessable passwords.  
+- **Scam Awareness** – Explore real examples of phishing scams and learn how to spot them.
+
+---
+
+##  Requirements
+
+- Python 3.8+
+- Flask
+
+---
+
+##  Installation & Running Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+To run CyberShield locally, first clone the repository on your command promtusing:
+
+git clone https://github.com/zach123abc/Hackathon-CyberSheild
+
+
+Then navigate into the project folder:
+
+cd Hackathon-CyberSheild
+
+
+Make sure you have Python 3.8+ installed. Next, install the required dependencies:
+
+pip install flask
+
+
+Once everything is set up, start the Flask app with:
+
+python app.py
+
+
+Then create a Virtual Environment (Optional but Recommended)
+
+python -m venv venv
+
+
+Activate it:
+
+Windows (CMD):
+
+venv\Scripts\activate
+
+
+Windows (PowerShell):
+
+.\venv\Scripts\Activate.ps1
+
+
+macOS / Linux:
+
+source venv/bin/activate
