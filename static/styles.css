@@ -1,247 +1,166 @@
-/* ======================
-   Reset & global
-====================== */
+/* General Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d0d0d; /* almost black */
-    color: #e0e0e0; /* soft light gray */
-    line-height: 1.6;
-}
-
-/* ======================
-   Navbar
-====================== */
-nav {
-    background-color: #121212; /* subtle dark gray */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 1px solid #1f1f1f;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav .logo a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-nav .menu a {
-    color: #cfcfcf; /* slightly lighter gray */
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: background 0.2s ease;
-}
-
-nav .menu a:hover {
-    background-color: #1f1f1f; /* subtle hover */
-}
-
-/* ======================
-   Container
-====================== */
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px 40px;
-    background-color: #121212; /* match navbar for consistency */
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
-}
-
-/* ======================
-   Headings
-====================== */
-h1, h2 {
-    color: #e0e0e0;
-    margin-bottom: 25px;
-    font-weight: 700;
-}
-
-h1 { font-size: 2.2rem; }
-h2 { font-size: 1.6rem; }
-
-/* ======================
-   Paragraphs & links
-====================== */
-p, li {
-    font-size: 1rem;
-    margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 a {
-    color: #7dafff; /* subtle blue for links */
-    text-decoration: none;
-    transition: all 0.2s ease;
+  color: #61dafb;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* ======================
-   Buttons
-====================== */
-button, .btn {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    background-color: #1c1c1c; /* dark gray button */
-    color: #e0e0e0;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover, .btn:hover {
-    background-color: #2a2a2a; /* subtle highlight */
-}
-
-/* Back button */
-.back-btn {
-    display: inline-block;
-    margin-bottom: 25px;
-    background-color: #1c1c1c;
-    color: #e0e0e0;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.back-btn:hover {
-    background-color: #2a2a2a;
-}
-
-/* ======================
-   Forms
-====================== */
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-form input[type="number"],
-form input[type="text"],
-form select,
-form input[type="checkbox"] {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #1f1f1f;
-    background-color: #121212;
-    color: #e0e0e0;
-    font-size: 1rem;
-}
-
-form input:focus, form select:focus {
-    outline: none;
-    border: 1px solid #7dafff; /* subtle focus blue */
-}
-
-/* ======================
-   Password generator
-====================== */
-#password {
-    font-family: monospace;
-    font-size: 1.2rem;
-    background-color: #121212;
-    color: #e0e0e0;
-    padding: 12px 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-#copyBtn {
-    margin-left: 10px;
-}
-
-/* ======================
-   Lists
-====================== */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 12px;
-}
-
-/* ======================
-   Responsive
-====================== */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav .menu a {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .container {
-        padding: 20px;
-        margin: 30px 15px;
-    }
-}
-.card-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.card {
-  background: #1c1c1c;
+/* Header Styling */
+header {
+  background-color: #1f1f1f;
   padding: 20px;
-  border-radius: 12px;
-  width: 280px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card h2 {
-  margin-top: 0;
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #333;
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #333, #444);
   color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.2s;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.btn:hover {
-  background: #555;
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #61dafb;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #4fa3d1;
+}
+
+/* Features Section */
+#features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature-cards .card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.feature-cards .card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-cards .card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.feature-cards .card p {
+  font-size: 1rem;
+}
+
+/* Services Section */
+#services {
+  background-color: #1f1f1f;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-cards .card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.service-cards .card:hover {
+  transform: translateY(-10px);
+}
+
+.service-cards .card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-cards .card p {
+  font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
