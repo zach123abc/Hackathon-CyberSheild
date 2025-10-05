@@ -3,16 +3,10 @@
 {% block title %}Main Menu{% endblock %}
 
 {% block content %}
-<h1 style="text-align: center;">Main Menu</h1>
-<ul style="list-style: none; text-align: center; padding: 0;">
-    <li style="margin: 10px 0;">
-        <a href="{{ url_for('generate') }}">Generate Password</a>
-    </li>
-    <li style="margin: 10px 0;">
-        <a href="{{ url_for('scam_awareness') }}">Scam Awareness</a>
-    </li>
-    <li style="margin: 10px 0;">
-        <a href="{{ url_for('password_safety') }}">Password Safety</a>
-    </li>
+<h1>Main Menu</h1>
+<ul>
+  <li><a class="btn" href="{{ url_for('generate') }}">Generate Password</a></li>
+  <li><a class="btn" href="{{ url_for('password_safety') }}">Password Safety</a></li>
+  <li><a class="btn" href="{{ url_for('scam_awareness') }}">Scam Awareness</a></li>
 </ul>
 {% endblock %}
