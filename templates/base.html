@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{% block title %}{% endblock %} | CyberShield</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-  <nav>
-    <div class="logo">
-      <a href="{{ url_for('menu') }}">CyberShield</a>
-    </div>
-    <div class="menu">
-      <a href="{{ url_for('generate') }}">Generate Password</a><br>
-      <a href="{{ url_for('password_safety') }}">Password Safety</a><br>
-      <a href="{{ url_for('scam_awareness') }}">Scam Awareness</a>
-    </div>
-  </nav>
+{% extends "base.html" %}
 
-  <div class="container">
-    {% block content %}{% endblock %}
+{% block title %}Main Menu{% endblock %}
+
+{% block content %}
+<h1>Main Menu</h1>
+<p>Welcome to CyberShield! Protect your accounts and stay safe online by exploring the tools below.</p>
+
+<div class="card-container">
+  <div class="card">
+    <h2>Password Generator</h2>
+    <p>Instantly generate strong, random passwords. Customize character types for maximum security.</p>
+    <a class="btn" href="{{ url_for('generate') }}">Go</a>
   </div>
-</body>
-</html>
+
+  <div class="card">
+    <h2>Password Safety</h2>
+    <p>Learn the rules for creating unguessable passwords and avoiding common mistakes.</p>
+    <a class="btn" href="{{ url_for('password_safety') }}">Learn</a>
+  </div>
+
+  <div class="card">
+    <h2>Scam Awareness</h2>
+    <p>Identify phishing attempts and scams before they target you. Real-world examples included.</p>
+    <a class="btn" href="{{ url_for('scam_awareness') }}">Explore</a>
+  </div>
+</div>
+{% endblock %}
