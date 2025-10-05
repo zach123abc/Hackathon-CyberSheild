@@ -1,141 +1,139 @@
-/* Base Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #f4f7fc; 
+/* Reset defaults */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Navigation */
+/* Body & background */
+body {
+    background-color: #000000; /* pure black */
+    color: #e0e0e0; /* light gray text */
+    line-height: 1.6;
+}
+
+/* Navbar */
 nav {
-    background: #0d6efd; 
-    color: white;
+    background-color: #1a1a1a; /* dark gray */
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #333;
 }
 
 nav a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 nav a:hover {
-    color: #ffdd57; /* yellow hover */
+    text-decoration: underline;
 }
 
-
+/* Container */
 .container {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #1a1a1a; /* dark card */
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
 }
 
-
-h1, h2, h3 {
-    color: #0d6efd;
-    text-align: center;
+/* Headings */
+h1, h2 {
     margin-bottom: 20px;
+    color: #f0f0f0;
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
+/* Lists */
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 
-input[type="number"],
-input[type="text"],
-input[type="password"],
-textarea {
-    padding: 12px;
+ul li a {
+    color: #e0e0e0;
+    font-weight: 500;
+    display: block;
+    margin: 8px 0;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+form input[type="number"],
+form input[type="text"],
+form select,
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
     border-radius: 8px;
-    border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #111111; /* dark input */
+    color: #f0f0f0;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #0d6efd;
-    box-shadow: 0 0 5px rgba(13,110,253,0.3);
-}
-
-
-button {
-    background-color: #0d6efd;
-    color: white;
+form button {
+    padding: 12px 25px;
     border: none;
-    padding: 12px 20px;
+    background-color: #222222; /* dark button */
+    color: #f0f0f0;
+    font-weight: 600;
     border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-    background-color: #0b5ed7;
+form button:hover {
+    background-color: #333333;
 }
 
+/* Generated password display */
+#password {
+    font-family: monospace;
+    font-size: 18px;
+    color: #f0f0f0;
+    background: #111111;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
 
+#copyBtn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222222;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+#copyBtn:hover {
+    background-color: #333333;
+}
+
+/* Links */
 a {
-    color: #0d6efd;
-    text-decoration: none;
+    color: #e0e0e0;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Password Display */
-#password {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: #e9ecef;
-    font-weight: bold;
-    word-break: break-all;
-}
-
-
-ul.menu-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-}
-
-ul.menu-list li a {
-    background: #0d6efd;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: background 0.3s;
-}
-
-ul.menu-list li a:hover {
-    background: #0b5ed7;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background: #0d6efd;
-    color: white;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
 }
