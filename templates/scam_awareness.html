@@ -4,32 +4,36 @@
 
 {% block content %}
 <a class="back-btn" href="{{ url_for('menu') }}">← Back</a>
-<h1>Scam Awareness</h1>
+
+<section class="page-header">
+  <h1>Scam Awareness</h1>
+  <p>Learn to spot and avoid online scams before they reach you.</p>
+</section>
 
 <div class="info-box">
   <h2>Stay Alert</h2>
-  <p>Scammers try to trick you into giving sensitive info. Learn to identify red flags.</p>
+  <p>Scammers use manipulation to steal your personal information. Recognizing red flags early can protect you.</p>
 </div>
 
 <div class="info-box">
   <h2>Common Scams</h2>
   <ul>
-    <li>Phishing Emails pretending to be banks or services</li>
-    <li>Fake tech support calls or popups</li>
-    <li>Social media impersonations or giveaway scams</li>
+    <li>Phishing emails pretending to be trusted companies</li>
+    <li>Fake tech support calls or malicious popups</li>
+    <li>Social media impersonation and giveaway scams</li>
   </ul>
 </div>
 
 <div class="info-box">
   <h2>Tips to Avoid Scams</h2>
   <ul>
-    <li>Check sender carefully</li>
-    <li>Hover over links before clicking</li>
-    <li>Never share passwords or sensitive info</li>
+    <li>Double-check the sender’s email address</li>
+    <li>Hover over links to preview URLs before clicking</li>
+    <li>Never share passwords or sensitive information</li>
     <li>Enable two-factor authentication</li>
-    <li>Be skeptical of urgent or fear-inducing messages</li>
+    <li>Be skeptical of urgency or fear tactics</li>
   </ul>
 </div>
 
-<p>CyberShield helps you recognize and avoid scams before they impact you.</p>
+<p class="closing-text">CyberShield helps you recognize and avoid scams before they impact you.</p>
 {% endblock %}
