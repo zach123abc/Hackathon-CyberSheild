@@ -4,31 +4,32 @@
 
 {% block content %}
 <a class="back-btn" href="{{ url_for('menu') }}">← Back</a>
-
 <h1>Scam Awareness</h1>
 
-<p>Phishing scams trick you into giving away personal info. Here are <strong>red flags to watch for</strong>:</p>
+<div class="info-box">
+  <h2>Stay Alert</h2>
+  <p>Scammers try to trick you into giving sensitive info. Learn to identify red flags.</p>
+</div>
 
-<h2>Common Signs of a Scam Email</h2>
-<ul>
-    <li>Urgent or threatening language (“Your account will be closed today!”).</li>
-    <li>Unfamiliar or suspicious sender addresses.</li>
-    <li>Links that look odd when you hover over them.</li>
-    <li>Requests for passwords or personal info.</li>
-    <li>Poor spelling or formatting.</li>
-</ul>
+<div class="info-box">
+  <h2>Common Scams</h2>
+  <ul>
+    <li>Phishing Emails pretending to be banks or services</li>
+    <li>Fake tech support calls or popups</li>
+    <li>Social media impersonations or giveaway scams</li>
+  </ul>
+</div>
 
-<h2>Example of a Phishing Email</h2>
-<blockquote>
-    “Dear User,<br>
-    Your account has been compromised. Please <a href="#">click here</a> to verify your identity.”
-</blockquote>
+<div class="info-box">
+  <h2>Tips to Avoid Scams</h2>
+  <ul>
+    <li>Check sender carefully</li>
+    <li>Hover over links before clicking</li>
+    <li>Never share passwords or sensitive info</li>
+    <li>Enable two-factor authentication</li>
+    <li>Be skeptical of urgent or fear-inducing messages</li>
+  </ul>
+</div>
 
-<h2>How to Protect Yourself</h2>
-<ul>
-    <li>Check the sender’s email domain carefully.</li>
-    <li>Never click unknown links — go to the official site manually.</li>
-    <li>Enable two-factor authentication (2FA) where possible.</li>
-    <li>Report suspicious messages to your provider or IT support.</li>
-</ul>
+<p>CyberShield helps you recognize and avoid scams before they impact you.</p>
 {% endblock %}
