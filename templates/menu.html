@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Main Menu</title>
-</head>
-<body>
-    <h1 style="text-align: center;">Main Menu</h1>
-    <ul style="list-style: none; text-align: center;">
-        <li><a href="{{ url_for('generate') }}">Generate Password</a></li>
-        <li><a href="{{ url_for('scam_awarness') }}">Scam Awarness</a></li>
-        <li><a href="{{ url_for('pasword_saftey') }}">Password Safty</a></li>
-    </ul>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Main Menu{% endblock %}
+
+{% block content %}
+<h1 style="text-align: center;">Main Menu</h1>
+<ul style="list-style: none; text-align: center; padding: 0;">
+    <li style="margin: 10px 0;">
+        <a href="{{ url_for('generate') }}">Generate Password</a>
+    </li>
+    <li style="margin: 10px 0;">
+        <a href="{{ url_for('scam_awareness') }}">Scam Awareness</a>
+    </li>
+    <li style="margin: 10px 0;">
+        <a href="{{ url_for('password_safety') }}">Password Safety</a>
+    </li>
+</ul>
+{% endblock %}
