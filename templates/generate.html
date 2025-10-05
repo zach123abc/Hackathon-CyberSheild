@@ -4,7 +4,11 @@
 
 {% block content %}
 <a class="back-btn" href="{{ url_for('menu') }}">← Back</a>
-<h1>Generate a Strong Password</h1>
+
+<section class="page-header">
+  <h1>Generate a Strong Password</h1>
+  <p>Customize the length and character set to create secure, unique passwords.</p>
+</section>
 
 <div class="generator-box">
   <form method="post">
@@ -13,24 +17,24 @@
 
     <fieldset>
       <legend>Include Characters:</legend>
-      <input type="checkbox" id="letters" name="letters" checked> Letters
-      <input type="checkbox" id="numbers" name="numbers" checked> Numbers
-      <input type="checkbox" id="symbols" name="symbols" checked> Symbols
+      <label><input type="checkbox" id="letters" name="letters" checked> Letters</label>
+      <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers</label>
+      <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols</label>
     </fieldset>
 
-    <button type="submit">Generate</button>
+    <button type="submit" class="primary-btn">Generate</button>
   </form>
 
   {% if password %}
   <div class="result-box">
     <p><strong>Generated Password:</strong> <span id="password">{{ password }}</span></p>
-    <button id="copyBtn">Copy</button>
+    <button id="copyBtn" class="secondary-btn">Copy</button>
   </div>
   {% endif %}
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const copyBtn = document.getElementById('copyBtn');
   if (!copyBtn) return;
   copyBtn.addEventListener('click', async () => {
