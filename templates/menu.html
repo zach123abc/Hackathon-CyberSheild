@@ -4,12 +4,17 @@
 
 {% block content %}
 
-<section id="hero">
-  <h1>Secure Your Digital Life with CyberShield</h1>
-  <p>Advanced tools to protect your accounts and data.</p>
-  <a href="#services" class="cta-btn">Get Started</a>
+<!-- ===== HERO (animated gradient background) ===== -->
+<section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Secure Your Digital Life with CyberShield</h1>
+    <p class="hero-sub">Advanced tools to protect your accounts and data.</p>
+    <a href="#services" class="cta primary">Get Started</a>
+  </div>
 </section>
 
+<!-- ===== FEATURES ===== -->
 <section id="features">
   <h2>Our Core Features</h2>
   <div class="feature-cards">
@@ -26,10 +31,12 @@
     <div class="card">
       <h3>Security Tips</h3>
       <p>Stay informed with the latest security practices.</p>
+      <a class="btn" href="#security-tips">Read Tips</a>
     </div>
   </div>
 </section>
 
+<!-- ===== SERVICES ===== -->
 <section id="services">
   <h2>Our Services</h2>
   <div class="service-cards">
@@ -48,16 +55,8 @@
   </div>
 </section>
 
-<section class="tips">
-  <h2>Quick Tips</h2>
-  <ul>
-    <li>Use unique passwords for each account.</li>
-    <li>Enable two-factor authentication wherever possible.</li>
-    <li>Stay alert for suspicious emails and messages.</li>
-  </ul>
-</section>
-
-<section class="tips">
+<!-- ===== SECURITY TIPS ===== -->
+<section id="security-tips" class="tips">
   <div class="tips-header">
     <h2>Security Tips</h2>
     <p>Follow these essential rules to keep your digital identity safe.</p>
@@ -75,8 +74,11 @@
       <h3>Stay Vigilant</h3>
       <p>Be cautious of suspicious links, emails, and login prompts.</p>
     </div>
+    <div class="tip-card">
+      <h3>Bonus Tip</h3>
+      <p>Keep your software updated to protect against the latest vulnerabilities.</p>
+    </div>
   </div>
 </section>
-
 
 {% endblock %}
